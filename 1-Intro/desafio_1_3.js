@@ -73,3 +73,28 @@ const usuarios3 = [
     }
 ];
 
+function calculaSaldo(receitas, despesas) {
+  const receita = somaNumeros(receitas)
+  const despesa = somaNumeros(despesas)
+  return (receita - despesa)
+};
+
+function somaNumeros(numeros) {
+  // Soma todos números dentro do array "numeros"
+  let soma = 0
+  for(j = 0; j < numeros.length; j++) {
+    soma = soma + numeros[j]
+  }
+  return soma
+};
+
+for (i = 0; i < usuarios3.length; i++) {
+  const saldo = calculaSaldo(usuarios3[i].receitas,usuarios3[i].despesas)
+  if (saldo > 0) {
+    console.log(`${usuarios3[i].nome} possui saldo POSITIVO de ${saldo}.`)
+  } else if (saldo < 0) {
+    console.log(`${usuarios3[i].nome} possui saldo NEGATIVO de ${saldo}.`)
+  } else {
+    console.log(`${usuarios3[i].nome} não possui saldo.`)
+  }
+}
