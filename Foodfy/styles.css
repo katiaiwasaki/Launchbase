@@ -1,0 +1,72 @@
+@import "https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900&display=swap";
+
+:root {
+    --color-pinkish: #FBDFDB;
+}
+
+* {
+    font-family: 'Roboto', sans-serif;
+    padding: 0;
+    border: 0;
+    margin: 0;
+}
+
+body {
+    width: 940px;
+    margin: 0 auto;
+}
+
+body header {
+    display: flex;
+    padding: 36px 0;
+}
+
+header .logo {
+    width: 90px;
+    height: 27px;
+}
+
+header .links {
+    margin-left: 100px;
+}
+
+header .links a{
+    font-size: 16px;
+    text-decoration: none;
+    margin: 0 19px;
+}
+
+#wrapper {
+    background-color: var(--color-pinkish);
+    border-radius: 30px;
+    height: 366px;
+}
+
+#wrapper #intro {
+    float: left;
+    margin: 120px 56px;
+    width: 316px;
+}
+
+#wrapper #intro h1 {
+    font-size: 32px;
+    line-height: 48px;
+}
+
+#wrapper #intro p {
+    font-size: 18px;
+    line-height: 28px;
+    opacity: 0.7;
+}
+
+#wrapper img {
+    float: right;
+    width: 216px;
+    height: 300px;
+    margin: 66px 100px 50px 50px;
+}
+
+.receitas {
+    margin-top: 100px;
+    color: red;
+}
